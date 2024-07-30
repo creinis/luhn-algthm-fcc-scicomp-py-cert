@@ -282,4 +282,20 @@ for digit in even_digits:
         number = (number // 10) + (number % 10)
     sum_of_even_digits += number
 
+# Step 31
+
+# Below the second for loop of the verify_card_number function, create a variable named total, 
+# and assign it the value of the sum of the odd and even digits. 
+# Print total to the console.
+
+sum_of_even_digits = 0
+even_digits = card_number_reversed[1::2]
+for digit in even_digits:
+    number = int(digit) * 2
+    if number >= 10:
+        number = (number // 10) + (number % 10)
+    sum_of_even_digits += number
+total = sum_of_odd_digits + sum_of_even_digits
+print(total)
+
 
