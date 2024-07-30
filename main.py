@@ -206,5 +206,12 @@ def verify_card_number(card_number):
     print(sum_of_odd_digits)
     sum_of_even_digits = 0
 
+# Step 23
+
+# Create a variable even_digits and assign it the even digits of the reversed card number.
+
+    sum_of_even_digits = 0
+    even_digits = card_number_reversed[1::2]
+
 
 
