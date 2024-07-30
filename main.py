@@ -106,4 +106,13 @@ def verify_card_number(card_number):
     card_number_reversed = card_number[0:4][::-1]
     print(card_number_reversed)
     
-    
+# Step 12
+
+# Change card_number_reversed to be every second digit of the first four digits of card_number.
+
+def verify_card_number(card_number):
+    sum_of_odd_digits = 0
+    card_number_reversed = card_number[0:4:2]
+    print(card_number_reversed)
+
+
