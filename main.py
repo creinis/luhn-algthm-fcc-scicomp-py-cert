@@ -306,3 +306,19 @@ total = sum_of_odd_digits + sum_of_even_digits
 print(total)
 # return 0 == total % 10
 
+# Step 33
+
+#Adjust the verify_card_number call such that if it returns True, print VALID! to the console. 
+# Otherwise, print INVALID!.
+
+def main():
+    card_number = '4111-1111-4555-1142'
+    card_translation = str.maketrans({'-': '', ' ': ''})
+    translated_card_number = card_number.translate(card_translation)
+
+    if verify_card_number(translated_card_number):
+        print("VALID!")
+    else:
+        print("INVALID!")
+
+
