@@ -213,5 +213,26 @@ def verify_card_number(card_number):
     sum_of_even_digits = 0
     even_digits = card_number_reversed[1::2]
 
+# Step 24
+
+# Loop over the even digits and print each to the console.
+
+    sum_of_even_digits = 0
+    even_digits = card_number_reversed[1::2]
+    for digit in even_digits:
+        print(digit)
+
+# Step 26
+
+# The next part of the Luhn Algorithm is to multiply all the even digits by 2.
+
+# Within the even digit for loop, replace the print call with a variable named number 
+# and assign it the value of digit multiplied by 2.
+
+    sum_of_even_digits = 0
+    even_digits = card_number_reversed[1::2]
+    for digit in even_digits:
+        number = int(digit) * 2
+
 
 
