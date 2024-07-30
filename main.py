@@ -175,6 +175,22 @@ def verify_card_number(card_number):
         sum_of_odd_digits += digit
         print(digit)
 
+# Step 21
+
+# Currently, your script throws a TypeError because you are trying to add a string to an integer. 
+# You can fix this by converting the digit variable to an integer before adding it to sum_of_odd_digits, 
+# using the built-in int function:
+
+my_string = '123'
+my_int = int(my_string)
+
+# Convert the digit variable to an integer before adding it to sum_of_odd_digits. 
+# Then, move the print call to the end of the verify_card_number function to print the value of sum_of_odd_digits.
+
+for digit in odd_digits:
+    
+    sum_of_odd_digits += int(digit)
+    print(sum_of_odd_digits)
 
 
 
