@@ -15,3 +15,12 @@ def main():
 def main():
     card_number = "4111-1111-4555-1142"
 
+# Step 3
+
+# Python comes with built-in classes that can help us with string manipulation. 
+# One of them is the str class. It has a method called maketrans that can help us create a translation table. 
+# This table can be used to replace characters in a string:
+
+str.maketrans({'t': 'c', 'l': 'b'})
+
+
