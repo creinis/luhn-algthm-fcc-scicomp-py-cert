@@ -270,6 +270,16 @@ for digit in even_digits:
         number = (number // 10) + (number % 10)
         print(number)
 
+# Step 30
 
+# Outside of the if statement, add number to sum_of_even_digits. Also, remove the print call.
+
+sum_of_even_digits = 0
+even_digits = card_number_reversed[1::2]
+for digit in even_digits:
+    number = int(digit) * 2
+    if number >= 10:
+        number = (number // 10) + (number % 10)
+    sum_of_even_digits += number
 
 
