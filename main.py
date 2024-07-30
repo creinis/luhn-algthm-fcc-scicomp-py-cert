@@ -234,5 +234,19 @@ def verify_card_number(card_number):
     for digit in even_digits:
         number = int(digit) * 2
 
+# Step 27
+
+# To prevent the multiplication of one digit from being greater than 9, 
+# within the even digit loop, add an if statement that checks if number is greater than or equal to 10. 
+# If it is, print number.
+
+    sum_of_even_digits = 0
+    even_digits = card_number_reversed[1::2]
+    for digit in even_digits:
+        number = int(digit) * 2
+        if number >= 10:
+            print(number)
+
+
 
 
