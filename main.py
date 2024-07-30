@@ -298,4 +298,11 @@ for digit in even_digits:
 total = sum_of_odd_digits + sum_of_even_digits
 print(total)
 
+# Step 32
+
+# Return the result of comparing 0 to total modulo 10.
+
+total = sum_of_odd_digits + sum_of_even_digits
+print(total)
+# return 0 == total % 10
 
