@@ -161,4 +161,20 @@ def verify_card_number(card_number):
     for digit in odd_digits:
         print(digit)
     
+# Step 20
+
+# Within the for loop, use the += operator to add the digit to the sum_of_odd_digits variable.
+
+
+def verify_card_number(card_number):
+    sum_of_odd_digits = 0
+    card_number_reversed = card_number[::-1]
+    odd_digits = card_number_reversed[::2]
+
+    for digit in odd_digits:
+        sum_of_odd_digits += digit
+        print(digit)
+
+
+
 
