@@ -126,4 +126,18 @@ def verify_card_number(card_number):
     card_number_reversed = card_number[-1:-5:-1]
     print(card_number_reversed)
 
+# Step 14
+
+# Just as the step is optional, a start at 0 and an end at the end of the slice are optional:
+
+my_string = 'camperbot'
+camperbot = my_string[::]
+
+# Assign the reverse of the full card_number string to the card_number_reversed variable.
+
+def verify_card_number(card_number):
+    sum_of_odd_digits = 0
+    card_number_reversed = card_number[::-1]
+    print(card_number_reversed)
+
 
